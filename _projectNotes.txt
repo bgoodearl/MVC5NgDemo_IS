@@ -1,0 +1,53 @@
+
+Code Camp Demonstration app
+Hybrid MVC / AngularJS mini-SPA app using Identity Server v3 for Auth
+
+**********************************************************************
+PART A - Initial application ending with ~ MVC5NgDemo at end of Part A 
+**********************************************************************
+
+1) Create MVCDemo web app - MVC + WebAPI with No Authentication
+2) Rename solution to MVCNgDemo, rename project file
+3) Package Updates
+	bootstrap to 3.1.1
+	Mvc to 5.2.2
+	gets WebPages 3.2.2
+	gets Razor 3.2.2
+	Newtonsoft.Json 6.0.4
+	jQuery to 2.1.1
+	WebApi.WebHost to 5.2.2
+	gets WebApi.Client 5.2.2
+	gets WebApi.Core 5.2.2
+	WebApi.HelpPage to 5.2.2
+	(updates _ViewStart.cshtml)
+	WebApi to 5.2.2
+	WebGrease to 1.6.0
+4) Added Packages
+	EntityFramework 6.1.1
+	AngularJS.Route 1.3.0
+	gets AngularJS.Core 1.3.0
+5) Separated out views for _TopNav and _Footer
+6) Added render section "headend" to _Layout
+7) Moved meta for viewport down
+8) Added script to save root path from MVC for JavaScript
+9) Added conditional code to Bundle.Config to turn off optimizations for DEBUG
+10) Created projects BGoodMusic.Models and BGoodMusic.EFDAL
+11) Added EF to both projects
+12) Added AfterBuildOutputCopy.targets to both projects
+13) Added Rehearsal to Model
+14) Added IBGoodMusicRepository and BGoodMusicDBContext to EFDAL project.
+15) Added Migrations to EFDAL project
+16) Created first migration for initial schema, saved SQL script
+17) Created database for development (used by EDFAL), applied script from step 16
+18) Created database for web site, applied script to create table
+19) Moved Values WebAPI controller to API folder
+20) Added 3 rehearsals to database using SSMS and editing the table
+21) Added references to BGoodMusic assemblies in web app
+22) Added WebAPI controller for Rehearsals
+23) Uninstall Modernizr
+24) Uninstall Respond
+25) Added CamelCasePropertyNamesContractResolver to WebApiConfig.cs
+26) updated to bootstrap 3.2.0
+27) Added Music controller, Rehearsals method, view files for Index
+28) Added attribute routing
+

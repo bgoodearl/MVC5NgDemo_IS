@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC5NgDemo_IS", "MVCDemo\MVC5NgDemo_IS.csproj", "{C855A40E-4400-4634-9BF8-3B5059D56D45}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C05D0018-CD71-4EB2-911C-936EEE0F0788} = {C05D0018-CD71-4EB2-911C-936EEE0F0788}
+		{832C83F9-6047-4B29-BA9A-B298A6A2D2FF} = {832C83F9-6047-4B29-BA9A-B298A6A2D2FF}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F5C0334A-B389-4319-B5E3-532383150080}"
+	ProjectSection(SolutionItems) = preProject
+		_projectNotes.txt = _projectNotes.txt
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BGoodMusic.Models", "BGoodMusic.Models\BGoodMusic.Models.csproj", "{C05D0018-CD71-4EB2-911C-936EEE0F0788}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BGoodMusic.EFDAL", "BGoodMusic.EFDAL\BGoodMusic.EFDAL.csproj", "{832C83F9-6047-4B29-BA9A-B298A6A2D2FF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C05D0018-CD71-4EB2-911C-936EEE0F0788} = {C05D0018-CD71-4EB2-911C-936EEE0F0788}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C855A40E-4400-4634-9BF8-3B5059D56D45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C855A40E-4400-4634-9BF8-3B5059D56D45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C855A40E-4400-4634-9BF8-3B5059D56D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C855A40E-4400-4634-9BF8-3B5059D56D45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C05D0018-CD71-4EB2-911C-936EEE0F0788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C05D0018-CD71-4EB2-911C-936EEE0F0788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C05D0018-CD71-4EB2-911C-936EEE0F0788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C05D0018-CD71-4EB2-911C-936EEE0F0788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{832C83F9-6047-4B29-BA9A-B298A6A2D2FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{832C83F9-6047-4B29-BA9A-B298A6A2D2FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{832C83F9-6047-4B29-BA9A-B298A6A2D2FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{832C83F9-6047-4B29-BA9A-B298A6A2D2FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
