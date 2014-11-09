@@ -1,0 +1,33 @@
+﻿@using MVCDemo.Infrastructure
+@model MVCDemo.ViewModels.Test.ClientInfoViewModel
+@{
+    ViewBag.Title = "Client Info";
+}
+@section headend
+{
+@*<style>
+    table {
+        display: block;
+        width: 100%;
+    }
+
+</style>*@
+}
+<div class="container">
+    <div class="row">
+        @if (!string.IsNullOrWhiteSpace(ViewBag.Message as string))
+        {
+            <p>@Html.Raw(Html.Encode(ViewBag.Message).Replace(Environment.NewLine, CommonDefs.SharedTags.LineBreak))</p>
+        }
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+            <h2>Client Info</h2>
+
+            <table class="table table-striped table-bordered table-condensed">
+                @Html.Partial("Partial/InfoItemList", Model.ClientInfo)
+            </table>
+
+        </div>
+    </div>
+</div>

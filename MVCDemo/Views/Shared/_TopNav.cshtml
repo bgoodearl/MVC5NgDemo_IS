@@ -11,10 +11,12 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
-                @*<li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>*@
                 <li>@Html.ActionLink("Rehearsals (MVC)", "Index", "Music")</li>
                 @*<li>@Html.ActionLink("Rehearsals (Ng)", "Rehearsals", "Music")</li>*@
+                <li>@Html.ActionLink("Tests", "Index", "Test", new { area = "" }, null)</li>
+                @*<li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>*@
             </ul>
+            @Html.Partial("_LoginPartial")
         </div>
     </div>
 </div>

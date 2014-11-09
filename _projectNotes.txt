@@ -51,3 +51,36 @@ PART A - Initial application ending with ~ MVC5NgDemo at end of Part A
 27) Added Music controller, Rehearsals method, view files for Index
 28) Added attribute routing
 
+************************************************************
+PART B - Adding Auth using Thinktecture Identity Server v3
+************************************************************
+1) Add Startup class to web project
+2) Install packages
+    Microsoft.Owin.Host.Systemweb (3.0.0)
+        also gets
+        Owin (1.0.0)
+        Microsoft.Owin (3.0.0)
+    Microsoft.Owin.Security.Cookies (3.0.0)
+        also gets
+        Microsoft.Owin.Security (3.0.0)
+    Microsoft.Owin.Security.OpenIdConnect (3.0.0)
+        also gets
+        System.IdentityModel.Tokens.Jwt (4.0.0)
+        Microsoft.IdentityModel.Protocol.Extensions (1.0.0)
+    Thinktecture.IdentityModel.Owin.ResourceAuthorization.Mvc (2.0.0)
+        also gets
+        Thinktecture.IdentityModel.Owin.ResourceAuthorization (1.0.1)
+        Thinktecture.IdentityModel.Core (1.2.0)
+	Thinktecture.IdentityModel.Client (2.3.0)
+		also gets
+		Microsoft.Bcl (1.1.9)
+		Microsoft.Bcl.Build (1.0.14)
+		Microsoft.Net.Http (2.2.28)
+
+3) Added implementation code in Startup - modeled on code from:
+	https://github.com/thinktecture/Thinktecture.IdentityServer.v3.Samples/blob/master/source/Clients/MVC%20OWIN%20Client%20(Hybrid)/Startup.cs
+4) Added Infrastructure\Constants for constants used in Startup that were in IdentityServer
+5) Added AuthorizeAttribute to RegisterGlobalFilters in FilterConfig
+6) Added Auth controller and views
+7) Added shared view _LoginPartial
+8) Added Test controller, ViewModels and Views
