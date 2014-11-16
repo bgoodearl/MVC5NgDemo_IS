@@ -48,5 +48,12 @@ namespace MVCDemo.Infrastructure
             public const string WebSite = "website";
             public const string ZoneInfo = "zoneinfo";
         }
+
+        public static class LocalClaimTypes
+        {
+            public const string IdToken = "id_token";
+            public const string RefreshToken = "refresh_token";
+        }
+ 
     }
 }

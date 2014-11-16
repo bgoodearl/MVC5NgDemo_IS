@@ -53,6 +53,7 @@ PART A - Initial application ending with ~ MVC5NgDemo at end of Part A
 
 ************************************************************
 PART B - Adding Auth using Thinktecture Identity Server v3
+(Includes getting refresh token)
 ************************************************************
 1) Add Startup class to web project
 2) Install packages
@@ -84,3 +85,44 @@ PART B - Adding Auth using Thinktecture Identity Server v3
 6) Added Auth controller and views
 7) Added shared view _LoginPartial
 8) Added Test controller, ViewModels and Views
+
+********************************************
+PART D - AngularJS mini-SPA for Auth testing
+********************************************
+
+** Initial structure for Angular test app (mini-SPA)
+
+1) added folders app, app\test
+2) added Angular (Ng) module appTest.js
+3) added Ng factory appTest.config.js
+4) added Ng module testconfig.route.js
+5) added Ng controller testMain.js and view testMain.html
+6) Test - ensure Angular page shows up on "Angular Test" MVC page
+
+***
+
+7) Added packages:
+	Microsoft.AspNet.WebApi.Owin (5.2.2)
+	Microsoft.Owin.Security.Jwt (3.0.0)
+	Microsoft.Owin.Security.OAuth (3.0.0)
+	Thinktecture.IdentityServer.v3.AccessTokenValidation (1.6.0)
+8) Added API controller TestAuthInfoController and data models in Models\Test
+9) Added DemoControllerBase with methods to support setup of token for Angular app
+	Along with supporting definitions in LocalClaimTypes, and methods in ClaimsHelper.
+	Added DemoControllerBase, API\TestAuthInfoController
+	Infrastructure\ClaimsHelper
+	Constants\LocalClaimTypes
+	ViewModels\Shared\TokenInfo.cs
+	ViewModels\Test\AngularTest.cs
+	Views\Test\AngularTest.cshtml
+10) Added AngularTest method in Test controller to set up for Angular Test app
+11) Updated WebApiConfig:
+	Added SuppressDefaultHostAuthentication
+	Added new HostAuthenticationFilter(OAuthDefaults.AuthenticationType)
+	Added new AuthorizeAttribute
+12) Startup - 
+	Added ability to configure some properties with values from web.config
+	Added code with ifdef to use allow switch between use of Reference Token and Jwt
+13) Test - log in, use Angular test to get back claims info passed to WebAPI call in token
+14) Change #ifdef in Startup and code in Id Server to use Jwt instead of Reference Token
+	Test

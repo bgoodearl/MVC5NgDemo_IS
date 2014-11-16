@@ -29,5 +29,6 @@ using System.Runtime.InteropServices;
 //      Build Number (yywwd) - yy=year, ww=week of year, d = day of week (0 = Sunday)
 //      Revision
 //
-[assembly: AssemblyVersion("0.2.14460.1")]
-[assembly: AssemblyFileVersion("0.2.14460.1")]
+// 0.32.xxx for to go with TT Id Svr (v3) Beta 3-2
+[assembly: AssemblyVersion("0.32.14470.1")]
+[assembly: AssemblyFileVersion("0.32.14470.1")]
