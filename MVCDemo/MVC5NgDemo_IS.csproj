@@ -226,6 +226,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MusicController.cs" />
     <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Filters\ContentSecurityPolicyFilterAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -265,6 +266,7 @@
     <Content Include="app\test\testMain.html" />
     <Content Include="app\test\testMain.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Content\angular-csp.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />

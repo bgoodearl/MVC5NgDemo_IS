@@ -17,7 +17,7 @@
                     </thead>
                     <tbody ng-repeat="rehearsal in vm.rehearsals">
                         <tr>
-                            <td>{{ rehearsal.date }}</td>
+                            <td>{{ rehearsal.date | date:'MM/dd/yyyy' }}</td>
                             <td>{{ rehearsal.time }}</td>
                             <td>{{rehearsal.duration}}</td>
                             <td>{{rehearsal.location}}</td>
