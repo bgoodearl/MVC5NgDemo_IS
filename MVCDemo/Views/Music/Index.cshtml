@@ -20,7 +20,7 @@
         <th>
             @Html.DisplayNameFor(model => model.Location)
         </th>
-        @*<th></th>*@
+        <th></th>
     </tr>
 
     @foreach (var item in Model)
@@ -39,9 +39,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Location)
             </td>
-            @*<td>
+            <td>
                 @Html.ActionLink("Edit", "Rehearsals", "Music", null, null, frag, null, null)
-            </td>*@
+            </td>
         </tr>
     }
 

@@ -30,5 +30,5 @@ using System.Runtime.InteropServices;
 //      Revision
 //
 // 0.32.xxx for to go with TT Id Svr (v3) Beta 3-2
-[assembly: AssemblyVersion("0.32.14470.1")]
-[assembly: AssemblyFileVersion("0.32.14470.1")]
+[assembly: AssemblyVersion("0.32.14472.1")]
+[assembly: AssemblyFileVersion("0.32.14472.1")]
