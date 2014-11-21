@@ -161,3 +161,11 @@ from files delivered from site.
 4) Added angular-csp.css
 	(found in https://code.angularjs.org/snapshot/)
 5) Added format for date in list
+
+********************************
+PART G - Cleanup and Tweaks
+
+Changes to bring code in line with MVC5NgDemo
+********************************
+Removed code that was tried and commented out along the way
+AssemblyInfo tweaks

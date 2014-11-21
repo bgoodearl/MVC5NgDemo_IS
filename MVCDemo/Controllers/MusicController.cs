@@ -43,6 +43,9 @@ namespace MVCDemo.Controllers
             return View(itemList);
         }
 
+        // Left as an exercise to the reader
+        // Move common threaded code into ControllerBase
+        // (See same code in Tests controller AngularTest method)
         [Route("rehearsals")]
         public async Task<ActionResult> Rehearsals()
         {
@@ -68,6 +71,7 @@ namespace MVCDemo.Controllers
                         response.AccessToken.Length,
                         response.AccessToken.Substring(0, 16),
                         response.AccessToken.Substring(response.AccessToken.Length-16));
+                    //Uncomment for more information when testing/exploring the app
                     //msg.AppendFormat("Access Token: \"{1}\"{0}Refresh Token: \"{2}\"{0}",
                     //    Environment.NewLine,
                     //    response.AccessToken,

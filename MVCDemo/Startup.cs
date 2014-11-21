@@ -31,6 +31,9 @@ namespace MVCDemo
             internal const string ast_UserInfoEndpoint = "ast:UserInfoEndpoint";
         }
 
+
+        //************
+        #region Config
         internal static class Config
         {
             private static string _ast_Authority;
@@ -76,6 +79,8 @@ namespace MVCDemo
             internal const string ClientSecret = "secret";
 
         }
+        #endregion Config
+
 
         public void Configuration(IAppBuilder app)
         {

@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("MVC5NgDemo")]
-[assembly: AssemblyDescription("MVC 5 / AngularJS Hybrid Demo")]
+[assembly: AssemblyDescription("MVC 5 / AngularJS Hybrid Demo with Identity Server Auth")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("MVC5NgDemo")]
@@ -30,5 +30,5 @@ using System.Runtime.InteropServices;
 //      Revision
 //
 // 0.32.xxx for to go with TT Id Svr (v3) Beta 3-2
-[assembly: AssemblyVersion("0.32.14472.1")]
-[assembly: AssemblyFileVersion("0.32.14472.1")]
+[assembly: AssemblyVersion("0.32.14474.1")]
+[assembly: AssemblyFileVersion("0.32.14474.1")]

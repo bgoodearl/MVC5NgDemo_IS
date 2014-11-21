@@ -26,6 +26,9 @@ namespace MVCDemo.Controllers
             return View();
         }
 
+        // Left as an exercise to the reader
+        // Move common threaded code into ControllerBase
+        // (See same code in Music controller Rehearsals method)
         public async Task<ActionResult> AngularTest()
         {
             AngularTest model = new ViewModels.Test.AngularTest();
